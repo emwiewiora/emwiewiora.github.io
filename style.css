@@ -148,13 +148,20 @@ hr {
   transition: transform 0.5s ease-out;
 }
 
+@media (max-width: 50em) {
+    .nav-list a {
+        padding: 1rem;
+        font-size: 2.2rem;
+    }
+  }
+
 @media (max-width: 28.75em) {
     .nav-list {
       margin: 0 1rem;
     }
     .nav-list a {
         padding: 1rem;
-        font-size: 1.2rem;
+        font-size: 1.7rem;
     }
   }
 
@@ -165,7 +172,7 @@ hr {
   
   /* Welcome section */
   
-  .welcome-section {
+.welcome-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -181,6 +188,18 @@ hr {
   font-style: italic;
   color: var(--main-white2);
 }
+
+@media (max-width: 28.75em) {
+    .welcome-section > h1 {
+        font-size: 4rem;
+    }
+    .welcome-section > p {
+        font-size: 2rem;
+    }
+    .welcome-section {
+        height: 20vh;
+    }
+  }
 
 /* Intro section */
 
@@ -210,13 +229,8 @@ hr {
 
 @media (max-width: 28.75em) {
   .intro-section-header {
-    font-size: 4rem;
-  }
-}
-
-@media (max-width: 30.625em) {
-  .intro-section {
-    padding: 6rem 1rem;
+    font-size: 3rem;
+    margin: 0 auto 1rem auto;
   }
 }
 
@@ -248,15 +262,11 @@ hr {
 
 @media (max-width: 28.75em) {
   .about-section-header {
-    font-size: 4rem;
+    font-size: 3rem;
+    margin: 0 auto 1rem auto;
   }
 }
 
-@media (max-width: 30.625em) {
-  .about-section {
-    padding: 6rem 1rem;
-  }
-}
 
 /* Projects section */
 
@@ -373,7 +383,7 @@ hr {
 
 @media (max-width: 28.75em) {
   .contact-section-header > h2 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 
@@ -423,5 +433,6 @@ footer i {
   footer {
     flex-direction: column;
     text-align: center;
+    padding: 1rem;
   }
 }
