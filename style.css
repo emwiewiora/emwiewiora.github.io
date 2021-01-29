@@ -134,15 +134,11 @@ hr {
   margin-right: 2rem;
 }
 
-@media (max-width: 28.75em) {
-  .nav {
-    justify-content: center;
-  }
-
+/* @media (max-width: 28.75em) {
   .nav-list {
     margin: 0 1rem;
   }
-}
+} */
 
 .nav-list a {
   display: block;
@@ -152,17 +148,20 @@ hr {
   transition: transform 0.5s ease-out;
 }
 
+@media (max-width: 28.75em) {
+    .nav-list {
+      margin: 0 1rem;
+    }
+    .nav-list a {
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+  }
+
 .nav-list a:hover {
   background: var(--main-black);
   transform: translateY(2px);
 }
-
-.btn-show-all > i {
-  margin-left: 10px;
-  transform: translateX(0);
-  transition: transform 0.3s ease-out;
-}
-
   
   /* Welcome section */
   
