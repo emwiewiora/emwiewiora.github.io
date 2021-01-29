@@ -108,6 +108,12 @@
     display: block;
     width: 100%;
   }
+
+  hr {
+      width: 50%;
+      margin-bottom: 10px;
+      color: var(--main-black);
+  }
   
   /* nav */
   
@@ -180,7 +186,7 @@
     
   .intro-section-header {
     max-width: 640px;
-    margin: 0 auto 6rem auto;
+    margin: 0 auto 2rem auto;
     color: var(--main-green);
   }
 
@@ -217,7 +223,7 @@
   
   .about-section-header {
     max-width: 640px;
-    margin: 0 auto 6rem auto;
+    margin: 0 auto 2rem auto;
     color: var(--main-green);
   }
 
