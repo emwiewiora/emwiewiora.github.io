@@ -222,7 +222,7 @@ hr {
 
 @media (max-width: 28.75em) {
   .blockquote-section {
-    visibility: hidden;
+    display: none;
   }
 }
 
