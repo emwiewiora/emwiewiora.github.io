@@ -77,6 +77,7 @@ body {
   font-weight: 400;
   line-height: 1.4;
   color: var(--main-white);
+  background-color: var(--main-white);
   /*  background-color: var(--main-white); */
 }
 
@@ -167,7 +168,7 @@ hr {
     }
     .nav-list a {
         padding: 1rem;
-        font-size: 1.7rem;
+        font-size: 1.9rem;
     }
   }
 
@@ -206,6 +207,45 @@ hr {
         height: 20vh;
     }
   }
+/* Block quote section */
+.blockquote-section {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: var(--main-black);
+  background-color: var(--main-green);
+  border: 1px solid var(--main-black);
+  margin: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 28.75em) {
+  .blockquote-section {
+    visibility: hidden;
+  }
+}
+
+.blockquote-section p {
+  font-size: 2rem;
+  padding: 15px;
+  background: var(--main-white2);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.blockquote-section p::before {
+  content: '\201C';
+}
+
+.blockquote-section p::after {
+  content: '\201D';
+}
+
+figcaption {
+  color: var(--main-white);
+  margin: 4px;
+}
 
 /* Intro section */
 
@@ -258,12 +298,25 @@ hr {
 }
 
 .about-section > p {
-  max-width: 1000px;
+  max-width: 1100px;
   font-size: 2rem;
   font-weight: 200;
   font-style: normal;
   color: var(--main-blue);
   margin-bottom: 1rem;
+}
+
+.about-section > ol {
+  color: var(--main-black);
+  margin-bottom: 10px;
+}
+
+.about-section ol > li {
+  text-align: left;
+}
+
+.about-section p > em {
+  font-size: 1.5rem;
 }
 
 @media (max-width: 28.75em) {
